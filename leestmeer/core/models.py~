@@ -1,0 +1,41 @@
+from django.db import models
+
+from wagtail.wagtailcore.models import Page
+from wagtail.wagtailcore.fields import RichTextField
+from wagtail.wagtailadmin.edit_handlers import FieldPanel
+from wagtail.wagtailimages.edit_handlers import ImageChooserPanel
+from wagtail.wagtailimages.models import Image
+
+class HomePage(Page):
+    body = RichTextField(default="")
+    header_img = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+    )
+    
+class BlogPage(Page):
+    body = RichTextField()
+    date = models.DateField("Post date")
+    feed_image = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+'
+    )
+BlogPage.content_panels = [
+    FieldPanel('title', classname="full title"),
+    FieldPanel('date'),
+    FieldPanel('body', classname="full"),
+]
+
+BlogPage.promote_panels = [
+    FieldPanel('slug'),
+    FieldPanel('seo_title'),
+    FieldPanel('show_in_menus'),
+    FieldPanel('search_description'),
+    ImageChooserPanel('feed_image'),
+]
