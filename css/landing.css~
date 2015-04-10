@@ -1,0 +1,75 @@
+.lightblue {
+    background-color: #95d7d4;
+}
+.darkblue {
+    background-color: #5fb5b2;
+    color: #FFF;
+}
+.dark{
+    background-color: #000;
+    color:#FFF;
+}
+
+.title{
+
+}
+
+.header{
+    margin: 128px auto;
+    color: #FFF;
+    text-align: center;
+}
+.header h1{
+    font-size: 4em;
+}
+.header p{
+    font-size: 1.6em;
+}
+.header a{
+    background-color: #f7c45f;
+    color: #FFF;
+}
+
+.footer{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+.footer h6{
+    text-align: right;
+}
+
+.content{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.content p{
+    font-size: 1.3em;
+}
+
+.quote p{
+    margin: 16px 32px;
+    color: #FFF;
+    font-style: italic;
+    font-size: 2.5em;
+    text-align: center;
+}
+.quote h3{
+    text-align: right;
+}
+
+.features div{
+    text-align: center;    
+}
+.features div h1{
+    margin: 8px 64px;
+}
+.features div p{
+    text-align: left;
+    margin: 8px 64px;
+}
+.features div img{
+    max-height:240px;
+    margin: 32px auto;
+}
+
