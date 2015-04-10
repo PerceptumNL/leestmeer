@@ -1,0 +1,30 @@
+{% extends "landing/base.html" %}
+{% load i18n %}
+{% load class_tag %}
+
+{% block body_class %}{{ block.super }} home{% endblock %}
+
+{% block page_title %}
+    Leest Meer
+{% endblock %}
+
+{% block content %}
+<h1> Leest Meer met LeesMeer </h1>
+{% for block in blocks %}
+    {% if block|get_class == 'TextBlock' %}
+        <div class="block textblock">
+            <h2>{{ block.title }}</h2>
+            <p>{{ block.content|safe }}</p>
+        </div>
+    {% elif block|get_class == 'ImageBlock' %}
+        <div class="block imageblock">
+            <img src="{{ block.source }}" style="height:160px">
+            <p>{{ block.caption|safe }}</p>
+        </div>    
+    {% else %}
+        <div class="block">
+            {{block}}
+        </div>    
+    {% endif %}
+{% endfor %}
+{% endblock %}
