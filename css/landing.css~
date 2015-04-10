@@ -32,7 +32,10 @@
 
 .footer{
     margin-top: 64px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+}
+.footer h1{
+    margin-bottom: 24px;
 }
 .footer h6{
     text-align: right;
@@ -71,5 +74,28 @@
 .features div img{
     max-height:240px;
     margin: 32px auto;
+}
+
+.form{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+div label{
+    float: right;
+    color: #5fb5b2;
+    font-size:2em;
+}
+
+.form-control{
+    border-radius: 0px;
+    border: none;
+    background-color: #f5f5f5;
+}
+
+button.submit{
+    float: right;
+    background-color: #f7c45f;
+    color: #FFF;
 }
 
