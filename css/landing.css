@@ -15,6 +15,7 @@
 }
 
 .header{
+    position: relative;
     margin: 128px auto;
     color: #FFF;
     text-align: center;

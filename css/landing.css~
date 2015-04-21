@@ -15,6 +15,7 @@
 }
 
 .header{
+    position: relative
     margin: 128px auto;
     color: #FFF;
     text-align: center;
@@ -59,6 +60,7 @@
 }
 .quote h3{
     text-align: right;
+    color: #555;
 }
 
 .features div{
