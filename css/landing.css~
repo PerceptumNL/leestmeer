@@ -15,7 +15,7 @@
 }
 
 .header{
-    position: relative
+    position: relative;
     margin: 128px auto;
     color: #FFF;
     text-align: center;
@@ -63,6 +63,17 @@
     color: #555;
 }
 
+.features{
+    padding: 32px 0;
+}
+
+.features h1{
+    text-align:center;
+}
+.features h2{
+    text-align:center;
+}
+
 .features div{
     text-align: center;    
 }
@@ -76,6 +87,7 @@
 .features div img{
     max-height:240px;
     margin: 32px auto;
+    width:auto;
 }
 
 .form{
