@@ -76,7 +76,10 @@
     text-align:center;
     margin: 8px 32px;
 }
-
+.features h3{
+    text-align:center;
+    margin: 8px 32px;
+}
 .features div{
     text-align: center;    
 }
