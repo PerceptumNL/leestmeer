@@ -2,7 +2,7 @@
     background: linear-gradient(
       rgba(149, 215, 212, 1), 
       rgba(149, 215, 212, 1)
-    ), url("/banner_image.jpg");
+    ), url("/banner_image_cropped.jpg");
     background-size: cover;
     background-postion:center;
 }
