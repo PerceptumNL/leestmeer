@@ -1,3 +1,31 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);*/ 
+    -webkit-border-radius: 10px;
+    background-color:#333;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+    background:#95d7d4; 
+    -webkit-box-shadow: inset 1px 0  rgba(0,0,0,0.5); 
+}
+
+.bs-example{
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;
+    z-index:25;
+}
+
 #header{
     background: linear-gradient(
       rgba(149, 215, 212, 1), 
@@ -6,6 +34,34 @@
     background-size: cover;
     background-postion:center;
 }
+
+.headline{
+    padding-top:64px;
+}
+
+.featureslides div h1{
+    font-size: 3em;
+    text-align: center; 
+}
+.featureslides{
+    width:480px;
+    max-width: 100%;
+    margin:60px auto;
+}
+
+.background-pattern{
+    background: #FFF;
+    background-image: url('/img/bg-pattern-blue-washed.png');
+    background-size: 160px;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+}
+
+.navbar{
+    margin-bottom:0px;
+    border-bottom: none;
+}
+
 
 .lightblue {
     background-color: #95d7d4;
@@ -20,9 +76,13 @@
 }
 
 .title{
+    background: #FFF;
+    background: rgba(255,255,255,0.65);
 
 }
-
+.title img{
+    height: 48px;
+}
 
 .header{
     position: relative;
@@ -45,6 +105,7 @@
 .footer{
     margin-top: 64px;
     margin-bottom: 32px;
+    padding-bottom: 30px;
 }
 .footer h1{
     margin-bottom: 24px;
@@ -62,6 +123,9 @@
     font-size: 1.3em;
 }
 
+.quote {
+    padding: 32px 0;
+}
 .quote p{
     margin: 16px 32px;
     color: #FFF;
@@ -75,6 +139,7 @@
 }
 
 .features{
+    display:block;
     padding: 32px 0;
 }
 
@@ -84,11 +149,13 @@
 }
 .features h2{
     text-align:center;
-    margin: 8px 32px;
 }
 .features h3{
     text-align:center;
     margin: 8px 32px;
+}
+.features img{
+    border-radius:8px;
 }
 .btn{
     border: none;
@@ -102,7 +169,8 @@
 }
 
 .features div{
-    text-align: center;    
+    text-align: center;
+    margin-bottom: 32px;  
 }
 .features div h1{
     margin: 8px 64px;
@@ -114,7 +182,7 @@
 .features div img{
     max-height:240px;
     margin: 32px auto;
-    width:auto;
+    width:50%;
 }
 
 .form{
@@ -123,7 +191,6 @@
 }
 
 div label{
-    float: right;
     color: #5fb5b2;
     font-size:2em;
 }
@@ -138,5 +205,198 @@ button.submit{
     float: right;
     background-color: #f7c45f;
     color: #FFF;
+}
+
+
+a.nav{
+    text-decoration: none;
+}
+button.nav{
+    display: inline-block;
+    border: none;
+    background: #eee;
+    height:1.5em;
+    margin:0 16px;
+    cursor: pointer;
+}
+button.nav:hover{
+    background: #ddd;
+}
+
+
+form label{
+    font-size:16px;
+}
+form a{
+    display: none;
+}
+
+form input{
+    display:block;
+    background-color: #eee;
+    text-indent:8px;
+    padding: 16px 0;
+    margin: 4px 0;
+    border: none;
+    width:100%;
+
+}
+form input:focus{
+    background-color: #e5e5e5;
+}
+input[type=checkbox]{
+    display:inline-block;
+    background-color: #333;
+    text-indent:8px;
+    padding: 16px 0;
+    margin: 0;
+    border: none;
+    width:16px;
+}
+input[type=radio]{
+    display:inline-block;
+    background-color: #333;
+    text-indent:8px;
+    padding: 16px 0;
+    margin: 0;
+    border: none;
+    width:16px;
+}
+
+form button{
+    border: none;
+    background-color: #333;
+    width:100%;
+    height:64px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Arial;
+}
+
+form button:hover{
+    background-color:#777;
+}
+
+.button{
+    margin: 32px 8px;
+    border: none;
+    background-color: #333;
+    height:32px;
+    cursor: pointer;
+    color: #FFF;
+    font-family: Arial;
+}
+.button:hover{
+    background-color:#777;
+}
+.button t4{
+    padding: 0px 32px;
+}
+
+form p ul{
+    list-style-type: none;
+    padding: 5px 0;
+    margin: 12px 0;
+    background-color: #F9C0C4;
+    color: #363C54;
+    display:block;
+    width:100%;
+    border: none;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 10pt;
+    font-weight: 300;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+form p ul li{
+    margin: 0px 5px;
+    padding:16px 0;
+}
+
+.option{
+    width:100%;
+    background: #e5e5e5;
+    margin: 8px 0;
+}
+.option div{
+    padding: 8px 32px;
+}
+
+.wrapper {
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:5;
+    padding: 5px 0 5px;
+    text-align: center;
+}
+.wrapper h4{
+    line-height:5px;
+}
+
+
+.socialbut{
+    display: inline-block;
+    width: 60px;
+    height:100%;
+    margin: 0 8px;
+    line-height: 100%;
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+    background: #eee;
+    cursor: pointer;
+}
+.social {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    line-height: 45px;
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+    background: #eee;
+    cursor: pointer;
+}
+.socialbut:hover {
+    background: #FFF;
+}
+
+
+
+@media only screen and (max-width : 1200px) {
+    .quote{
+        padding: 8px 4px;
+    }
+    .quote p{
+        margin: 0;
+        font-size:1.5em;
+    }
+    .quote h3{
+        margin: 4px;
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width : 979px) {
+
+}
+
+@media only screen and (max-width : 767px) {
+    .wrapper{
+        position: relative;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+
 }
 
