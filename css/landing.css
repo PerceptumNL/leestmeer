@@ -21,8 +21,7 @@
 .bs-example{
     position:fixed;
     top: 0;
-    left:0;
-    right:0;
+    width: 100%;
     z-index:25;
 }
 
@@ -170,7 +169,7 @@
 
 .features div{
     text-align: center;
-    margin-bottom: 32px;  
+    padding-top: 32px;  
 }
 .features div h1{
     margin: 8px 64px;
@@ -180,7 +179,6 @@
     margin: 8px 64px;
 }
 .features div img{
-    max-height:240px;
     margin: 32px auto;
     width:50%;
 }
@@ -389,6 +387,18 @@ form p ul li{
 @media only screen and (max-width : 767px) {
     .wrapper{
         position: relative;
+    }
+    .features h3 {
+        margin: 0;
+    }
+    .features div img{
+        width:30%;
+    }
+    .btn{
+        border: none;
+        background: #f7c45f;
+        width:100%;
+        margin: 8px 0;
     }
 }
 
