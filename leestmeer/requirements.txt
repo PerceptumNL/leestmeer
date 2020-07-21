@@ -1,6 +1,6 @@
 # Minimal requirements
 django>=1.11.28
-wagtail==2.7.2
+wagtail==2.7.4
 
 # Recommended components (require additional setup):
 # psycopg2==2.5.2
